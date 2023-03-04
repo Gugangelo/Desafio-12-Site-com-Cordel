@@ -20,6 +20,7 @@ body {
     font-family: var(--fonte_normal);
 }
 
+
 header {
     background-color: black;
     color: white;
@@ -48,6 +49,7 @@ header a:hover,  footer a:hover {
     text-decoration: underline;
 }
 
+
 section {
     padding: 10vh 0px 10vh 30px;
     line-height: 2em;
@@ -62,7 +64,11 @@ section > p {
 section.normal {
     background-color: white;
     color: black;
-    /* white-space: pre; <- Outra forma de lidar com quebra de linha sem usar tanto <br>*/
+}
+
+section.normal > p {
+    white-space: pre-line;
+    /* Acima outra forma de lidar com quebra de linha sem usar tanto <br> */
 }
 
 section.imagem {
@@ -85,11 +91,12 @@ section#img02 {
 section.imagem p {
     display: inline-block;
     background-color: rgba(0, 0, 0, 0.368);
-    padding-left: 25px;
-    padding-right: 25px;
+    padding: 0px 25px;
     margin-left: -25px;
     text-shadow: 2px 2px 0px black;
+    white-space: pre-line;
 }
+
 
 footer {
     background-color: black;
